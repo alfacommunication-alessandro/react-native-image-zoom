@@ -419,8 +419,8 @@ public static defaultProps = new Props()
                                 (this.zoomCurrentDistance - this.zoomLastDistance) / 200
                             let zoom = this.scale + distanceDiff
 
-                            if (zoom < 0.6) {
-                                zoom = 0.6
+                            if (zoom < 1) {
+                                zoom = 1
                             }
                             if (zoom > 10) {
                                 zoom = 10
